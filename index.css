@@ -1,0 +1,55 @@
+.nav{
+	grid-area:nav;
+}
+.menu{
+	grid-area:menu;
+}
+.footer{
+	grid-area:footer;
+}
+.poster{
+	grid-area:poster;
+	height:200px;
+}
+.side_bar{
+	grid-area:sidebar;
+	height:400px;
+}
+.logo{
+	grid-area:logo;
+}
+.profile{
+	grid-area:profile;
+}
+.main{
+	grid-area:main;
+	height:635px
+}
+.profile{
+	grid-area:profile;
+	height:200px;
+}
+.grid-container{
+	display:grid;
+	grid-template-areas:
+	'logo nav nav nav nav' 
+	'poster poster poster poster poster'
+	'menu menu menu menu menu'
+	'profile main main main main'
+	'sidebar main main main main'
+	'footer footer footer footer footer';
+	gap:15px;
+	background-color:black;
+	gap:10px;
+	padding:2%;
+	border:5px solid gold;
+}
+.grid-container > div{
+	background-color:brown;
+	text-align:center;
+	border:2px solid white;
+	border-radius:10px;
+	padding:10px;
+	color:white;
+	font-size:22px;
+}
